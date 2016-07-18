@@ -16,7 +16,7 @@ file mapIDs.lst
 -4
 12
 
-#last entry (line) will not be selected (leave empty or use any number - it worked for me using any cmap number)
+--> last entry (line) will not be selected (leave empty or use any number - it worked for me using any cmap number)
 
 
 gapsize: size (bp) of the gap between cmaps when fusing them into single molecule, e.g. 50000 [bp]
