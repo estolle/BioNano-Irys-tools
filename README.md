@@ -1,27 +1,27 @@
 # BioNano-Irys-tools
-tools to work with BioNano Irys optical maps (cmaps)
+tools to work with BioNano Irys optical maps (cmaps)  
 
-Bash (zsh) script to pick cmaps (by ID) from a multi-cmap file and invert (flip) selected. Then create a fused cmap from these (e.g. a chromosome). selected (incl flipped) cmaps are stored separately as well.
+Bash (zsh) script to pick cmaps (by ID) from a multi-cmap file and invert (flip) selected. Then create a fused cmap from these (e.g. a chromosome). selected (incl flipped) cmaps are stored separately as well.  
 
-#run cmap_pick_flip_merge.sh
-./cmap_pick_flip_merge.sh MAPIDs.lst GAPSIZE NEWID INCMAP.cmap OUTPREFIX
+#run cmap_pick_flip_merge.sh  
+./cmap_pick_flip_merge.sh MAPIDs.lst GAPSIZE NEWID INCMAP.cmap OUTPREFIX  
 
-# MAPIDs.lst
-#file containing list of cmap ID's to pick and/or flip (flip if negative) from a main optical.genome.assembly.cmap
-#one entry per line, last line will not be used, thus leave as empty line
-#eg fuse/orientate cmap-optical-contig 185+249+7+15+945 and turn around the contig 185,15 and 945
--185\p
-249\p
-7\p
--15\p
--945\p
+# MAPIDs.lst  
+#file containing list of cmap ID's to pick and/or flip (flip if negative) from a main optical.genome.assembly.cmap  
+#one entry per line, last line will not be used, thus leave as empty line  
+#eg fuse/orientate cmap-optical-contig 185+249+7+15+945 and turn around the contig 185,15 and 945  
+-185  
+249  
+7  
+-15  
+-945  
 
-# GAPSIZE
-#gap to be used between two adjacent cmaps [bp]
-#eg 50kb
-50000
+# GAPSIZE  
+#gap to be used between two adjacent cmaps [bp]  
+#eg 50kb  
+50000  
 
-# NEWID
+# NEWID  
 #ID [integer] for fused cmap (output), means cmap-ID within the cmap file
 #eg 1 [as in LG1 or chr1]
 1
