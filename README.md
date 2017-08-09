@@ -10,11 +10,11 @@ Bash (zsh) script to pick cmaps (by ID) from a multi-cmap file and invert (flip)
 #file containing list of cmap ID's to pick and/or flip (flip if negative) from a main optical.genome.assembly.cmap
 #one entry per line, last line will not be used, thus leave as empty line
 #eg fuse/orientate cmap-optical-contig 185+249+7+15+945 and turn around the contig 185,15 and 945
--185
-249
-7
--15
--945
+-185\n
+249\n
+7\n
+-15\n
+-945\n
 
 # GAPSIZE
 #gap to be used between two adjacent cmaps [bp]
